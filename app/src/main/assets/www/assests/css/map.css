@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	margin-left: 50px;
+	
+}
+svg #layer2{
+	visibility: hidden;
+	display: none;
+	
+}
+
+svg .font-awesome{
+	font-family: FontAwesome;
+	display:inline;
+	    font-size: 100px;
+	
+}

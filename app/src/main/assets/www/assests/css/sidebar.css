@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+
+
+#sidebar {
+	position:absolute;
+	/* left: 1100px; */
+	left: 1100px;
+	top: 70px;
+    width: 265px;
+    height:510px;
+    display :block;
+    
+    background:  #395673;
+   
+ }
+ 
+ 

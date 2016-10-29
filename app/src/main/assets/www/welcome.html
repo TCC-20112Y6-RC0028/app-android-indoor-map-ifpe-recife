@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!--  <meta charset="utf-8"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title> Indoor Map IFPE - Campus Recife</title>
+
+<!-- <link type="text/css" href="./css/custom.css" rel="stylesheet"
+	media="only screen and (min-width: 100px)">
+ -->
+<!-- <!-- <script src="assests/jquery/jquery-1.11.3.js"></script> --> 
+<!-- <script src="assests/d3/d3.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet"> -->
+<!-- <link href="assests/css/edit.css" rel="stylesheet"> -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<!-- <link rel="stylesheet" href="assests/fontawesome/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="assests/css/map.css">
+
+
+<link type="text/css" href="css/pan_zoom.css" rel="stylesheet">
+<link type="text/css" href="assests/css/sidebar.css" rel="stylesheet">
+<script src="assests/js/sidebar.js"></script>
+
+<script src="assests/js/init.js"></script>
+<script src="assests/js/pan_zoom.js"></script>
+<script src="assests/js/graph.js"></script>
+<script src="assests/js/fileutils.js"></script>
+
+
+<script src="js/events/mapevent.js"></script>
+ -->
+ <link rel="stylesheet" href="assests/jquery/jquery-ui.css">
+ <script src="assests/jquery/jquery-1.11.3.js"></script>
+  <script src="assests/jquery/jquery-ui.js"></script>
+  
+ 
+<style> 
+html{
+
+	
+width:100%;
+height: 100%;
+}
+body{
+	
+   /*  background-image: url("img/background-search.png");
+	background-repeat: no-repeat; */
+
+	margin:0px;
+	padding: 0px;
+    text-align: center;
+	width:100%;
+height: 100%;
+
+
+}
+
+#wrapper{
+width:100%;
+height: 100%;
+	  background:  url("img/background-search.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	
+
+  
+}
+input[type=text] {
+
+	width:50%;
+	position:absolute;
+	top:55%;
+	right:25%;
+	
+	bottom:50%;
+	
+/*    position:fixed;
+
+ */	text-align: left;
+	/* width: 50%; */
+
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+   font-size: 23px;
+    
+  /*   background-image: url('searchicon.png');
+    background-position: right; 
+    background-6epeat: no-repeat;
+ */    padding: 24px 40px 24px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#procurar {
+
+ 
+/*    position:fixed;
+
+ */	
+ 	width: 40px;
+position:absolute;
+top:55%;	right:25%;
+	
+	bottom:50%;
+	
+
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    font-size: 23px;
+    
+    background-image: url('searchicon.png');
+    
+    background-color:white;
+    background-position: center; 
+    background-repeat: no-repeat;
+  padding: 24px 40px 24px 40px;
+ }
+
+/* input[type=text]:focus {
+    width: 60%;
+} */
+
+
+
+</style>
+
+
+ <script>
+ 
+  function graph(id,desc){
+	  this.id = id;
+	  this.desc = desc;
+  }
+  
+  
+  $(function() {
+	  
+	  
+			  
+	
+  $.ajax({
+      url: "/ServletUpdateMap?id_map=a",
+      dataType: "xml",
+      async: false,
+		processData: true ,
+      success: function( xmlResponse ) {
+    	  console.log($( "vertice", xmlResponse ));
+        var data = $( "vertice", xmlResponse ).map(function() {
+        	if($( this ).attr("ppi") == "#a00"){
+        		$("#ppi").val($( this ).attr("id"));
+        	}
+        	
+        	if ($( this ).attr("ppi").length > 1 && $( this ).attr("ppi").substr(0,1) != "x" &&  $( this ).attr("ppi").indexOf("#") == -1){
+        	
+          return {
+        	 sigla: $( this ).attr("sigla"),
+        	desc: $( this ).attr("descricao"),
+            value: $( this ).attr("ppi") + " - " + $( this ).attr("sigla") + " - " +  $( this ).attr("descricao"),
+            id: $( this ).attr("id") 
+          };}
+        	
+        	
+        }).get();
+        
+        $( "#search" ).autocomplete({       	
+  	      source: data,
+  	     /*  minLength: 4, */
+  	      focus: function( event, ui ) {
+  	        /* console.log( ui.item.label ); */
+  	        console.log( ui.item.desc );
+  /* 	        $( "#search" ).val( ui.item.desc);
+   */	        $("#procurar").attr("type","hidden" );
+  	        return false;
+  	      },
+  	      select: function( event, ui ) {
+  	    
+  	    	  /* console.log( ui.item.label ); */
+  	    	  var temp =  ui.item.value + "-"  + ui.item.sigla + "-"+ ui.item.desc ;
+  	    	  $( "#search" ).val( temp);
+  	    	  $("#procurar").attr("type","submit" );
+  	    	  $("#destino").attr("value",ui.item.id);
+  	
+  	        return false;
+  	      }
+  	    });
+  	   /*  .autocomplete( "instance" )._renderItem = function( ul, item ) {
+  	      return $( "<li>" )
+  	      	.append(  item.value + "-"  + item.sigla + "-" + item.desc )
+  	        .appendTo( ul );
+  	    }; */
+        
+      }
+    });
+   
+	
+  });
+    
+
+  </script>
+
+
+</head>
+<body>
+
+<div id="wrapper" class = "ui-widget">
+<form method="POST" action="/ServletSearchMap?id_map=a">
+  <input type="text" id="search" name="search" placeholder="Qual coordenação, departamento ou sala a procurar.." />
+      
+    
+  <input id="procurar" type="hidden"  value=""/>
+  <input type="hidden" id="destino" name="destin" value="" />
+  <input type="hidden" id="ppi" name="ppi" value="" />
+  
+  </form>
+  
+</div>
+
+
+</body>
+</html>

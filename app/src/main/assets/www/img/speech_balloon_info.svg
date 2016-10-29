@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="213.41876"
+   width="208.30284"
+   version="1.1"
+   id="speech_ballon_info"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="speech_balloon_info.svg">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="2.5114943"
+     inkscape:cx="104.15142"
+     inkscape:cy="106.70938"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4151"
+     showborder="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="g4151"
+     transform="scale(0.44978088,0.5753815)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path4"
+       d="M 37.925348,363.91801 L 79.690624,268.99694 C 53.293525,248.38551 6.2849924,215.84114 7.0081994,155.09165 C 6.6194734,63.481731 131.46738,5.9472337 228.8523,7.0147867 C 358.30656,6.8339857 456.30126,74.453954 456.12046,154.54925 C 455.93966,263.03048 304.42755,333.54327 149.66101,296.11725 Z"
+       style="fill:#ffffff;stroke:#000000;stroke-width:14px;stroke-linejoin:round" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4138"
+       y="69.792961"
+       x="79.84465"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+         y="69.792961"
+         x="79.84465"
+         id="tspan4140"
+         sodipodi:role="line">Nº da Sala:</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4161"
+       y="84.797195"
+       x="64.226013"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+         id="tspan4165"
+         y="84.797195"
+         x="64.226013"
+         sodipodi:role="line">Sigla: </tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4169"
+       y="101.60228"
+       x="43.420925"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+         y="101.60228"
+         x="43.420925"
+         id="tspan4171"
+         sodipodi:role="line">Nome:</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4173"
+       y="134.21669"
+       x="28.814993"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan4177"
+         y="134.21669"
+         x="28.814993"
+         sodipodi:role="line"><tspan
+   id="tspan4219"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">Ramais</tspan>:</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="textsala"
+       y="67.992111"
+       x="163.87856"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspansala"
+         y="67.992111"
+         x="163.87856"
+         sodipodi:role="line" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="textsigla"
+       y="84.199738"
+       x="111.65397"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspansigla"
+         y="84.199738"
+         x="111.65397"
+         sodipodi:role="line" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="textnome"
+       y="100.40736"
+       x="95.446358"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspannome"
+         y="100.40736"
+         x="95.446358"
+         sodipodi:role="line" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="textramal"
+       y="134.61499"
+       x="93.6455"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#784421;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="134.61499"
+         x="93.6455"
+         id="tspanramal"
+         sodipodi:role="line" /></text>
+         
+    <image
+       sodipodi:absref="/img/not_found.png"
+       
+       xlink:href="/img/not_found.png"
+       y="140.46609"
+       x="100.84746"
+       height="147.24576"
+       width="249.89406"
+       id="photo" />
+  </g>
+</svg>

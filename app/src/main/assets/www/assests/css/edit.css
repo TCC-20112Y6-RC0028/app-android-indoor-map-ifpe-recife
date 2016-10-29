@@ -1,0 +1,223 @@
+@CHARSET "ISO-8859-1";
+
+.label_number{
+	font-size:12px;
+	font-weight: bold;
+}
+.number{
+	font-size:12px;
+	color:red;
+		
+	
+}
+
+#map-0{
+
+	float:left;
+	width:auto;
+   min-width: 1100px;
+	
+	/* width :625px; 
+	height:250px; */
+}
+#map-1{
+	/* width :625px; 
+	height:250px; */
+	width:auto;
+   min-width: 1100px;
+	float:left;
+	clear:both;
+	
+}
+#map-info{
+	/* float: right; */
+}
+
+#pane{
+	display: block;
+}
+.widget-pane-visible {
+    opacity: 1;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+
+.widget-pane {
+	display:block;
+    width: 408px;
+/*     position: absolute;
+ */    top: 0;
+    z-index: 3;
+   /*  opacity: 0; */
+    height: 0;
+    /* left: 0; */
+    clear:both;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    transition-property: -webkit-transform,transform,opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.0,0.0,0.2,1);
+}
+
+
+.scrollable-y {
+    outline-offset: -2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+.widget-pane-content {
+    background-color: #fff;
+}
+
+.widget-pane-content, .widget-pane-content-shim {
+    /* position: absolute; */
+    z-index: 1;
+    /* left: 0; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.widget-pane-content-holder {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: left;
+    overflow: visible;
+/*     position: absolute;
+ */    height: 100%;
+    width: 408px;
+}
+
+.widget-pane-section-header {
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    font-size: 13px;
+    display:block;
+       /*  margin-left: -100px; */
+}
+
+.widget-pane-fading.widget-pane-fade-in {
+    opacity: 1;
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+}
+.widget-pane-section-header-hero-clickable {
+    cursor: pointer;
+}
+.widget-pane-section-header-hero {
+    overflow: hidden;
+    direction: ltr;
+    display: block;
+    width: 308px;
+    height: 312px;
+}
+
+.widget-pane-fading {
+    transition-property: opacity,-webkit-filter,filter;
+    transition-duration: 0.15s,0.3s,0.3s;
+    transition-timing-function: cubic-bezier(0.4,0,1,1);
+ 
+}
+
+img{
+	    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+.widget-pane-section-header-description {
+       padding: 16px 24px 20px;
+        color: #fff;
+        display: block;
+        background-color: #00ae00;
+    width: 308px;
+ 
+}
+
+.widget-pane-section-header-title {
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+#sigla{
+	 width: 220px;
+   
+}
+.widget-pane-section-header-subtitle {
+    font-size: 13px;
+    margin-top: 4px;
+    color: black;
+}
+.widget-pane-section-rating{
+	    display: block;
+}
+.widget-pane-section-rating-line{
+	    margin-top: 8px;
+	        display: block;
+	        
+}
+.widget-pane-section-star-display{
+	color: white;
+}
+
+.widget-pane-section-info {
+    font-size: 13px;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    display: block;
+    text-align: left;
+        white-space: normal;
+        font-family: Roboto, Arial, sans-serif;
+        /* margin-left: -100px; */
+}
+
+.widget-pane-section-info-line {
+/*     padding: 0 24px 6px;
+ */    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+        font-size: 13px;
+        text-align: left;
+        white-space: normal;
+}
+
+.widget-pane-section-info-icon {
+    margin-right: 24px;
+    flex: 0 0 24px;
+        font-size: 13px;
+        text-align: left;
+            white-space: normal;
+          font-family: Roboto, Arial, sans-serif;
+}
+.maps-sprite-pane-info-address {
+    background: no-repeat url(//maps.gstatic.com/tactile/icons/pane-info-16b8e253a029d6bd9bd946d111022540.png) 0 -78px;
+    height: 24px;
+    width: 24px;
+    
+}
+

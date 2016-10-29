@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.ifpe.mapindoornfc" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--<uses-feature-->
+        <!--android:name="android.hardware.nfc"-->
+        <!--android:required="true" />-->
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_indoor_map_ifpe_recife"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
+
+      <!--  <activity android:name=".Welcome" >
+            <intent-filter>
+
+
+            </intent-filter>
+
+        </activity>-->
+
+       <!-- <activity android:name=".MainActivity" >
+                <intent-filter>
+
+                    <action android:name=".MainActivity" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+
+                </intent-filter>
+
+        </activity>-->
+
+        <activity android:name=".CheckNFCFeatureActivity" >
+            <intent-filter>
+                <action android:name=".CheckNFCFeatureActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReaderActivity"
+            android:label= "Reader IndoorMap-NFC" >
+            <intent-filter>
+
+
+                <action android:name=".ReaderActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http"
+                    android:host="1-dot-map-indoor-ifpe-recife-1021.appspot.com"
+                    android:pathPrefix="/bl-a-t.html" />
+                -->
+            </intent-filter>
+            <!--
+                <intent-filter>
+                    <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                    <category android:name="android.intent.category.DEFAULT" />
+
+                </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".WriterActivity"
+            android:label="Writer IndoorMap-NFC" >
+            <intent-filter>
+                <action android:name=".WriterActivity" />
+
+
+                <category android:name="android.intent.category.DEFAULT" />
+             <!--   <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+-->
+                <!--
+                                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                            <category android:name="android.intent.category.DEFAULT" />
+                                <data android:scheme="http"
+                                    android:host="1-dot-map-indoor-ifpe-recife-1021.appspot.com"
+                                    android:pathPrefix="/bl-a-t.html" />
+                -->
+            </intent-filter>
+            <!--
+          <intent-filter>
+              <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+              <category android:name="android.intent.category.DEFAULT" />
+
+          </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name=".WebViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--
+          <intent-filter>
+              <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+              <category android:name="android.intent.category.DEFAULT" />
+             <data android:scheme="http"
+                  android:host="1-dot-map-indoor-ifpe-recife-1021.appspot.com"
+                  android:pathPrefix="/bl-a-t.html" />
+          </intent-filter>
+            -->
+
+        </activity>
+
+        <activity
+            android:name=".WebViewWithoutNFC"
+            android:screenOrientation="landscape"
+            >
+                <intent-filter>
+                    <action android:name=".WebViewWithoutNFC" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+
+
+        </activity>
+
+
+        <activity
+            android:name=".Options"
+            android:screenOrientation="landscape"
+            >
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+    </application>
+
+</manifest>

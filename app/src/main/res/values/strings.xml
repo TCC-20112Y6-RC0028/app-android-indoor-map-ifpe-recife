@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MapIndoorNFC</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome">Seja Bem-Vindo!</string>
+    <string name="action_settings">Settings</string>
+    <string name="sector_prompt">Escolha Setor</string>
+    <string name="point_nfc_prompt">Escolha Ponto NFC</string>
+
+
+
+    <string-array name="sector_array">
+        <item>a1- PSCICOL - PSICOLOGIA</item>
+        <item>a5- CTUR - COORDENAÇÃO DE TURNOS </item>
+        <item>a9- SL PROOF - SALA DOS PROFESSORES</item>
+        <item>a2- CONT/CEOF - COORD DE CONTAB/COORD. DE EXECUÇÃO ORÇAMENTÁRIA E FINANCEIRA</item>
+        <item>a13- SERV S - SERVIÇO SOCIAL</item>
+        <item>a8- DGCR -  DIREÇÃO GERAL DO CAMPUS RECIFE</item>
+        <item>a70- DAEE - DIVISÃO DE ASSISTÊNCIA E APOIO AO ESTUDANTE</item>
+        <item>a33- PROAD - PRO‐REITORIA DE ADMINISTRAÇÃO EPLANEJAMENTO</item>
+    </string-array>
+    <string name="title_activity_quartos_json">QuartosJsonActivity</string>
+</resources>
